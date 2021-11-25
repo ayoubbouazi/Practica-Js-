@@ -7,17 +7,38 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="registro">
     <form action="">
         <label for="">Nombre y apellido: 
-            <input type="text">
+            <input type="text" name="nombre" id="1">
         </label>
-        
+        <!-- <label for="">Username:
+            <input type="text" name="username">
+        </label> -->
         <label for="">Mail: 
-            <input type="text">
+            <input type="email" name="email" id="2">
         </label>
         <label for="">Password:
-            <input type="password">
+            <input type="password" name="password" id="3">
         </label>
+        <button type="button">Registro</button>
     </form>
+    </div>
+    <div id="equipos">
+
+    </div>
+    <div id="miEquipo">
+
+    </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
+
+<style>
+    .formularioCorrecto{
+        background-color: green;
+    }
+    .formularioIncorrecto{
+        background-color: red;
+    }
+</style>
