@@ -1,3 +1,5 @@
+const form = document.querySelector('form');
+const div = document.getElementById('result');
 export class PantallaRegistro {
     constructor(pantallaRegistro){
         this.pantallaRegistro = pantallaRegistro;
@@ -11,7 +13,26 @@ export class PantallaRegistro {
 
             //Recuperar campos formulario
 
+            const user = {
+                name: form.elements.name.value,
+                email: form.elements.,
+            };
+        
+            div.innerHTML='';
+        
+            const response = await createUser(user);
+            if(response.status){
+                div.insertAdjacentHTML('beforeend', `
+                <p>Name and surname: ${response.data.name}</p>
+                <p>Email: ${response.data.job}</p>
+                <p>Password: ${response.data.job}</p>`);
+            }else{
+                alert(response.data);
+            }
+
             //Enviar formulario usando fetch a https://jsonplaceholder.typicode.com
+
+
 
             //Devolver usuario creado
         })
