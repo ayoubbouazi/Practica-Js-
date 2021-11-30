@@ -2,7 +2,7 @@ import { PantallaRegistro } from './registro';
 
 //Mostrar formulario registro usuario
 const pantallaRegistro = new PantallaRegistro(document.querySelector('#registro'));
-            RegEx de formulario(validacion)
+            // RegEx de formulario(validacion)
             const input = document.querySelectorAll('input');
 
             Array.from(input);
