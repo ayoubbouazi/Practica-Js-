@@ -14,8 +14,9 @@ export class PantallaRegistro {
             //Recuperar campos formulario
 
             const user = {
-                name: form.elements.name.value,
-                email: form.elements.,
+                name: form.elements.1.value,
+                email: form.elements.2.value,
+                password: form.elements.3.value
             };
         
             div.innerHTML='';
@@ -24,8 +25,8 @@ export class PantallaRegistro {
             if(response.status){
                 div.insertAdjacentHTML('beforeend', `
                 <p>Name and surname: ${response.data.name}</p>
-                <p>Email: ${response.data.job}</p>
-                <p>Password: ${response.data.job}</p>`);
+                <p>Email: ${response.data.email}</p>
+                <p>Password: ${response.data.password}</p>`);
             }else{
                 alert(response.data);
             }
