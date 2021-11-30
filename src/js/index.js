@@ -30,10 +30,7 @@ const pantallaRegistro = new PantallaRegistro(document.querySelector('#registro'
                 {
                 case 'nombre':
                     validacion(expresiones.name, e.target, 1);
-                    break;
-                case 'nombre':
-                    validacion(expresiones.name, e.target, 1);
-                    break;    
+                    break;   
                 case 'email':
                     validacion(expresiones.email, e.target, 2);
                     break;
