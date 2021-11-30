@@ -49,5 +49,7 @@ const pantallaRegistro = new PantallaRegistro(document.querySelector('#registro'
 
 //Una vez registrado, mostrar la pantalla de equipos
 
+        window.location.replace('../js');
+
 
 //Mostrar pantalla de miEquipo
