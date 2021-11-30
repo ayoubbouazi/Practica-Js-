@@ -33,7 +33,24 @@ export class PantallaRegistro {
 
             //Enviar formulario usando fetch a https://jsonplaceholder.typicode.com
 
-
+            async function createUser(user){
+                try {
+                    const response = await fetch('https://jsonplaceholder.typicode.com', {
+                    method: 'POST',
+                    headers: {
+                    'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(user),
+                    });
+                    if (response.status === 201){
+                        const responseJson = await response.json();
+                        return { status: true, data: responseJson };
+                    }
+                    return { status: false, data: 'ERROR failed request' };
+                    } catch (error) {
+                        return { status: false, data: error.message };
+                    }
+            }
 
             //Devolver usuario creado
         })
