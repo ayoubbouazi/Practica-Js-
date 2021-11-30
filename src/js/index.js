@@ -8,6 +8,7 @@ const pantallaRegistro = new PantallaRegistro(document.querySelector('#registro'
             Array.from(input);
             const expresiones = {
                 name: /^[A-Za-z ]+$/,
+                surname: /^[A-Za-z ]+$/,
                 email: /^\w+([\.\+\-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/,
                 password: /^[A-Za-z0-9]{5}$/,
             };
@@ -30,6 +31,9 @@ const pantallaRegistro = new PantallaRegistro(document.querySelector('#registro'
                 case 'nombre':
                     validacion(expresiones.name, e.target, 1);
                     break;
+                case 'nombre':
+                    validacion(expresiones.name, e.target, 1);
+                    break;    
                 case 'email':
                     validacion(expresiones.email, e.target, 2);
                     break;
