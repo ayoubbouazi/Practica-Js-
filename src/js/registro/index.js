@@ -16,7 +16,7 @@ export class PantallaRegistro {
     }
 
     show() {
-        this.pantallaRegistor.classList.remove('hide')
+        this.pantallaRegistor.classList.remove('hide');
     }
 
     getCreatedUser() {
