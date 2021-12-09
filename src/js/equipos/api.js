@@ -22,6 +22,7 @@ export async function logos(){
                 <p>${valor.team.name}</p></img>
             )
         });
+    }
 
     } catch (error) {
         console.log(error);
