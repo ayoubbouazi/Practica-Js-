@@ -12,7 +12,7 @@ async function initApp() {
     //Una vez registrado, mostrar la pantalla de equipos
     pantallaRegistro.getCreatedUser().then(registeredUser => {
         // Guardar session storage
-        sessionStorage.getItem('#registro');
+        pantallaRegistro.getSesionStorage();
         // Ocultar pantalla registro
         pantallaRegistro.hide();
 

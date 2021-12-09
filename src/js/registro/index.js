@@ -73,4 +73,8 @@ export class PantallaRegistro {
             });
         });
     }
+
+    getSesionStorage(){
+        sessionStorage.getItem('');
+    }
 }

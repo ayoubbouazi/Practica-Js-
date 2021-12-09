@@ -1,3 +1,4 @@
+import { logos } from "../equipos/api";
 export class PantallaEquipos{
     constructor(pantallaEquipos){
         this.hide();
@@ -10,4 +11,5 @@ export class PantallaEquipos{
     show() {
         this.PantallaEquipos.classList.remove('hide');
     }
-}
+};
+
