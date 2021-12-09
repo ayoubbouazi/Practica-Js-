@@ -1,4 +1,8 @@
 export class PantallaEquipos{
+    constructor(pantallaEquipos){
+        this.hide();
+        this.show();
+    }
     hide() {
         this.PantallaEquipos.classList.add('hide');
     }

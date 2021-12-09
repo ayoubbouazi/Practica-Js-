@@ -5,8 +5,9 @@ import { PantallaEquipos } from './equipos';
 async function initApp() {
     //Mostrar formulario registro usuario
     const pantallaRegistro = new PantallaRegistro(document.querySelector('#registro'));
+    const pantallaEquipos = new PantallaEquipos(document.querySelector('#equipos'));
     pantallaRegistro.show();
-    PantallaEquipos.hide();
+    pantallaEquipos.hide();
                 
     //Una vez registrado, mostrar la pantalla de equipos
     pantallaRegistro.getCreatedUser().then(registeredUser => {
@@ -16,7 +17,6 @@ async function initApp() {
         pantallaRegistro.hide();
 
         // Mostrar pantalla equipo
-        const pantallaEquipos = new PantallaEquipos(document.querySelector('#equipos'));
         pantallaEquipos.show();
 
         alert(registeredUser);

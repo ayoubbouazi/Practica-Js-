@@ -9,6 +9,8 @@ export class PantallaRegistro {
         this.registroErrorMessage = this.pantallaRegistro.querySelector('#registroErrorMessage');
         this.createdUser = this.registerSubmit();
         this.registerValidation();
+        this.hide();
+        this.show();
     }
 
     hide() {
