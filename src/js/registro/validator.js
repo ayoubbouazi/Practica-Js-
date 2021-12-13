@@ -15,7 +15,7 @@ const isValid = (expresion, inp, id) => {
 
 export function validateInput(input) {
     switch (input.name) {
-        case 'nombre':
+        case 'name':
             return isValid(expresiones.name, input, 1);
         case 'email':
             return isValid(expresiones.email, input, 2);

@@ -1,3 +1,57 @@
+const API_KEY = '694197a13cb821d7403fd00dde9b029c';
+const API_URL = 'https://v3.football.api-sports.io';
+const SEASON = '2020';
+const LEAGUE = '140';
+
+
+// Recuperar Teams en
+
+export async function getTeams() {
+    const response = await fetch(`${API_URL}/teams?league=${LEAGUE}&country=spain&season=${SEASON}`, {
+        method: 'GET',
+        headers: {
+            'x-apisports-key': API_KEY
+        }
+    });
+
+    const json = await response.json();
+
+
+
+    return json.response;
+}
+
+// Recuperar Players en API
+
+export async function getPlayers(teamId) {
+    const response = await fetch(`${API_URL}/players?league=${LEAGUE}&country=spain&season=${SEASON}&team=${teamId}`, {
+        method: 'GET',
+        headers: {
+            'x-apisports-key': API_KEY
+        }
+    });
+
+    const json = await response.json();
+
+    console.log(json);
+
+    return json.response;
+}
+
+export async function getTeamInfo(teamId) {
+    const response = await fetch(`${API_URL}/teams?id=${teamId}&league=${LEAGUE}&season=${SEASON}`, {
+        method: 'GET',
+        headers: {
+            'x-apisports-key': API_KEY
+        }
+    });
+
+    const json = await response.json();
+
+    return json.response;
+}
+
+/*
 export async function logos(){
     try {
         const response = await fetch('https://v3.football.api-sports.io/teams?league=140&season=2020&country=spain', {
@@ -28,4 +82,4 @@ export async function logos(){
         console.log(error);
     }
     logosEquipos();
-}
+}*/

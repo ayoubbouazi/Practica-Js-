@@ -1,0 +1,44 @@
+[{
+    "player": {
+        "id": 146,
+        "name": "Álex Collado",
+        "firstname": "Álex",
+        "lastname": "Collado Gutiérrez",
+        "age": 22,
+        "birth": {
+            "date": "1999-04-22",
+            "place": "Sabadell",
+            "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "177 cm",
+        "weight": "66 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/146.png%22%7D,%22statistics%22:[%7B%22team%22:%7B%22id%22:529,%22name%22:%22Barcelona%22,%22logo%22:%22https://media.api-sports.io/football/teams/529.png%22%7D,%22league%22:%7B%22id%22:140,%22name%22:%22La Liga",
+        "country": "Spain",
+        "logo": "https://media.api-sports.io/football/leagues/140.png%22,%22flag%22:%22https://media.api-sports.io/flags/es.svg%22,%22season%22:2020%7D,%22games%22:%7B%22appearences%22:0,%22lineups%22:0,%22minutes%22:0,%22number%22:null,%22position%22:%22Midfielder%22,%22rating%22:null,%22captain%22:false%7D,%22substitutes%22:%7B%22in%22:0,%22out%22:0,%22bench%22:1%7D,%22shots%22:%7B%22total%22:null,%22on%22:null%7D,%22goals%22:%7B%22total%22:0,%22conceded%22:0,%22assists%22:null,%22saves%22:null%7D,%22passes%22:%7B%22total%22:null,%22key%22:null,%22accuracy%22:null%7D,%22tackles%22:%7B%22total%22:null,%22blocks%22:null,%22interceptions%22:null%7D,%22duels%22:%7B%22total%22:null,%22won%22:null%7D,%22dribbles%22:%7B%22attempts%22:null,%22success%22:null,%22past%22:null%7D,%22fouls%22:%7B%22drawn%22:null,%22committed%22:null%7D,%22cards%22:%7B%22yellow%22:0,%22yellowred%22:0,%22red%22:0%7D,%22penalty%22:%7B%22won%22:null,%22commited%22:null,%22scored%22:0,%22missed%22:0,%22saved%22:null%7D%7D"
+    }
+        
+},
+{
+    "player": {
+        "id": 146,
+        "name": "David Masip",
+        "firstname": "David",
+        "lastname": "Masip Bascuñana",
+        "age": 28,
+        "birth": {
+            "date": "1999-04-22",
+            "place": "Terrassa",
+            "country": "Spain"
+        },
+        "nationality": "Spain",
+        "height": "177 cm",
+        "weight": "66 kg",
+        "injured": false,
+        "photo": "https://media.api-sports.io/football/players/146.png%22%7D,%22statistics%22:[%7B%22team%22:%7B%22id%22:529,%22name%22:%22Barcelona%22,%22logo%22:%22https://media.api-sports.io/football/teams/529.png%22%7D,%22league%22:%7B%22id%22:140,%22name%22:%22La Liga",
+        "country": "Spain",
+        "logo": "https://media.api-sports.io/football/leagues/140.png%22,%22flag%22:%22https://media.api-sports.io/flags/es.svg%22,%22season%22:2020%7D,%22games%22:%7B%22appearences%22:0,%22lineups%22:0,%22minutes%22:0,%22number%22:null,%22position%22:%22Midfielder%22,%22rating%22:null,%22captain%22:false%7D,%22substitutes%22:%7B%22in%22:0,%22out%22:0,%22bench%22:1%7D,%22shots%22:%7B%22total%22:null,%22on%22:null%7D,%22goals%22:%7B%22total%22:0,%22conceded%22:0,%22assists%22:null,%22saves%22:null%7D,%22passes%22:%7B%22total%22:null,%22key%22:null,%22accuracy%22:null%7D,%22tackles%22:%7B%22total%22:null,%22blocks%22:null,%22interceptions%22:null%7D,%22duels%22:%7B%22total%22:null,%22won%22:null%7D,%22dribbles%22:%7B%22attempts%22:null,%22success%22:null,%22past%22:null%7D,%22fouls%22:%7B%22drawn%22:null,%22committed%22:null%7D,%22cards%22:%7B%22yellow%22:0,%22yellowred%22:0,%22red%22:0%7D,%22penalty%22:%7B%22won%22:null,%22commited%22:null,%22scored%22:0,%22missed%22:0,%22saved%22:null%7D%7D"
+    }
+    
+}]

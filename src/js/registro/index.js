@@ -1,24 +1,16 @@
 
+import { Pantalla } from '../Pantalla';
 import { createUser } from './api';
 import { validateInput } from './validator';
 
-export class PantallaRegistro {
-    constructor(pantallaRegistro){
-        this.pantallaRegistro = pantallaRegistro;
-        this.formulario = this.pantallaRegistro.querySelector('form');
-        this.registroErrorMessage = this.pantallaRegistro.querySelector('#registroErrorMessage');
+export class PantallaRegistro extends Pantalla {
+    constructor(pantallaRegistro) {
+        super(pantallaRegistro);
+      
+        this.formulario = this.pantalla.querySelector('form');
+        this.registroErrorMessage = this.pantalla.querySelector('#registroErrorMessage');
         this.createdUser = this.registerSubmit();
         this.registerValidation();
-        this.hide();
-        this.show();
-    }
-
-    hide() {
-        this.pantallaRegistro.classList.add('hide');
-    }
-
-    show() {
-        this.pantallaRegistor.classList.remove('hide');
     }
 
     getCreatedUser() {

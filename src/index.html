@@ -29,7 +29,8 @@
     </style>
 </head>
 <body>
-    <div id="registro">
+    <div id="registro" class="hide">
+        <h1>Registro Usuario</h1>
         <form action="">
             <label for="">Nombre y apellido: 
                 <input type="text" class="input" name="name" id="1">
@@ -48,12 +49,19 @@
         <h1 id="registroErrorMessage"></h1>
     </div>
     <div id="result"></div>
-    <div id="equipos">
-        <div class="columna">Equipos</div>
-        <div class="columna">Jugadores</div>
-        <div class="columna">Información</div>
+    <div id="equipos" class="hide">
+        <h1>Equipos</h1>
+        <div class="columna">
+            <h2>Equipos</h2>
+            <ul></ul>
+        </div>
+        <div class="columna">
+            <h2>Jugadores</h2>
+            <ul></ul>
+        </div>
+        <div class="columna"><h2>Información</h2></div>
     </div>
-    <div id="miEquipo">
+    <div id="miEquipo" class="hide">
 
     </div>
     <script src="./js/index.js"></script>
