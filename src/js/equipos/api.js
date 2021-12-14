@@ -7,12 +7,15 @@ const LEAGUE = '140';
 // Recuperar Teams en
 
 export async function getTeams() {
-    const response = await fetch(`${API_URL}/teams?league=${LEAGUE}&country=spain&season=${SEASON}`, {
-        method: 'GET',
-        headers: {
-            'x-apisports-key': API_KEY
-        }
-    });
+    // if you want use it by internet API
+    // const response = await fetch(`${API_URL}/teams?league=${LEAGUE}&country=spain&season=${SEASON}`, {
+    //     method: 'GET',
+    //     headers: {
+    //         'x-apisports-key': API_KEY
+    //     }
+    // });
+
+    const response = await fetch('../json/Teams.json');
 
     const json = await response.json();
 
@@ -24,12 +27,14 @@ export async function getTeams() {
 // Recuperar Players en API
 
 export async function getPlayers(teamId) {
-    const response = await fetch(`${API_URL}/players?league=${LEAGUE}&country=spain&season=${SEASON}&team=${teamId}`, {
-        method: 'GET',
-        headers: {
-            'x-apisports-key': API_KEY
-        }
-    });
+    // const response = await fetch(`${API_URL}/players?league=${LEAGUE}&country=spain&season=${SEASON}&team=${teamId}`, {
+    //     method: 'GET',
+    //     headers: {
+    //         'x-apisports-key': API_KEY
+    //     }
+    // });
+
+    const response = await fetch('../json/Players.json');
 
     const json = await response.json();
 

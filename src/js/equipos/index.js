@@ -44,10 +44,9 @@ export class PantallaEquipos extends Pantalla {
         });
     }
 
-    async showTeamPlayers(teamId) {
-        alert(teamId);
-        // Recuperar informacion equipo
-        const players = await getPlayers;
+    async showTeamPlayers(team) {
+        // Recuperar informacion player
+        const players = await getPlayers(team);
 
         // Renderizar jugadores del equipo
 
@@ -63,14 +62,45 @@ export class PantallaEquipos extends Pantalla {
             playerNameElement.innerText = playerInfo.player.name;
             playerElement.appendChild(playerNameElement);
 
-            playersListElement.appendChild(playerElement);
+               // Creamos photo
+               const playerPhotoElement = document.createElement('img');
+               playerPhotoElement.src = playerInfo.player.photo;
+               playerElement.appendChild(playerPhotoElement);
+   
+               playersListElement.appendChild(playerElement);
         });
         // Escuchar evento click
-
+        teamsListElement.addEventListener('click', (event) => {
+            const playerElement = event.target.matches('li') ? event.target : event.target.closest('li');
         // Mostrar informacion jugar columna derecha
+        this.showTeamPlayers(playerElement.id);
+    });
     }
 
-    showPlayerInfo(playerId) {
+    showPlayerInfo(id) {
+        // Recuperar informacion equipo
+        const player = await getPlayers(id);
 
+        // Renderizar jugadores del equipo
+
+        const playerListElement = this.columnas[2].querySelector('ul');
+        playerListElement.innerHTML = '';
+
+        player.forEach(playerInfo => {
+            const playerElement = document.createElement('p');
+            playerElement.id = playerInfo.player.id;
+
+            // Creamos nombre
+            const playerNameElement = document.createElement('h4');
+            playerNameElement.innerText = playerInfo.player.name;
+            playerElement.appendChild(playerNameElement);
+
+               // Creamos photo
+               const playerPhotoElement = document.createElement('img');
+               playerPhotoElement.src = playerInfo.player.photo;
+               playerElement.appendChild(playerPhotoElement);
+   
+               playersListElement.appendChild(playerElement);
+        });
     }
 }
