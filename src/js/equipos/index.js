@@ -7,6 +7,7 @@ export class PantallaEquipos extends Pantalla {
         this.columnas = this.pantalla.querySelectorAll('.columna');
 
         this.showTeams();
+        
     }
 
     async showTeams() {
@@ -46,23 +47,23 @@ export class PantallaEquipos extends Pantalla {
     async showTeamPlayers(teamId) {
         alert(teamId);
         // Recuperar informacion equipo
-        const teams = await getPlayers(teamId);
+        const players = await getPlayers;
 
         // Renderizar jugadores del equipo
 
-        const teamsListElement = this.columnas[1].querySelector('ul');
-        teamsListElement.innerHTML = '';
+        const playersListElement = this.columnas[1].querySelector('ul');
+        playersListElement.innerHTML = '';
 
-        teams.forEach(playerInfo => {
-            const teamElement = document.createElement('li');
-            teamElement.id = playerInfo.team.id;
+        players.forEach(playerInfo => {
+            const playerElement = document.createElement('li');
+            playerElement.id = playerInfo.player.id;
 
             // Creamos nombre
-            const teamNameElement = document.createElement('h4');
-            teamNameElement.innerText = playerInfo.team.name;
-            teamElement.appendChild(teamNameElement);
+            const playerNameElement = document.createElement('h4');
+            playerNameElement.innerText = playerInfo.player.name;
+            playerElement.appendChild(playerNameElement);
 
-            teamsListElement.appendChild(teamElement);
+            playersListElement.appendChild(playerElement);
         });
         // Escuchar evento click
 

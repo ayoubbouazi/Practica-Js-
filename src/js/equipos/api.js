@@ -33,7 +33,6 @@ export async function getPlayers(teamId) {
 
     const json = await response.json();
 
-    console.log(json);
 
     return json.response;
 }
