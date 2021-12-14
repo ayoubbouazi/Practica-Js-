@@ -1,4 +1,4 @@
-const API_KEY = '694197a13cb821d7403fd00dde9b029c';
+const API_KEY = 'cc63d9e4a714db64119eb54658782c9d';
 const API_URL = 'https://v3.football.api-sports.io';
 const SEASON = '2020';
 const LEAGUE = '140';

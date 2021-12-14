@@ -1,7 +1,7 @@
 import { logos } from "../equipos/api";
 export class PantallaEquipos{
     constructor(pantallaEquipos){
-        this.
+        
         this.hide();
         this.show();
     }
